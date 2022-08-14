@@ -1,5 +1,8 @@
 # il-sass
+
 I learn SASS
+
+LEFT AT MIN: 32:03
 
 ## Resources
 
