@@ -1,0 +1,17 @@
+@use "sass:math";
+
+@function pixel2unit($pixel, $unit) {
+  @if not math.is-unitless($pixel) {
+    @error 'Number #{$pixel} must not have a unit specified.';
+  }
+
+  @return math.div($pixel, 16)+$unit;
+}
+
+@function rem($pixel) {
+  @return pixel2unit($pixel, rem);
+}
+
+@function em($pixel) {
+  @return pixel2unit($pixel, em);
+}
